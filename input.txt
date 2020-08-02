@@ -1,0 +1,28 @@
+5
+Kotor
+3
+2 10
+4 15
+5 5
+Budva
+4
+1 10
+3 10
+4 7
+5 5
+Bar
+2
+2 10
+4 7
+Perast
+4
+1 15
+2 7
+3 7
+5 10
+Tivat
+1 5
+2 5
+4 10
+Kotor Bar
+Bar Tivat
