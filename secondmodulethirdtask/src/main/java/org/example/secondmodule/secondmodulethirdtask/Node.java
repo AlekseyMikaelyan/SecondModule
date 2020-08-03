@@ -1,4 +1,6 @@
-package org.example.secondmodule.secondmodulethirdtask.cheapestpath;
+package org.example.secondmodule.secondmodulethirdtask;
+
+import org.example.secondmodule.secondmodulethirdtask.Edge;
 
 import java.util.ArrayList;
 import java.util.List;
