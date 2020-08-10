@@ -1,37 +1,36 @@
 package org.example.secondmodule.secondmodulethirdtask;
 
-import org.example.secondmodule.secondmodulethirdtask.Edge;
+public class Node implements Comparable<Node> {
 
-import java.util.ArrayList;
-import java.util.List;
+    public final String name;
+    public final int index;
+    public Edge[] adjacency;
+    public double minDistance = Double.POSITIVE_INFINITY;
+    public Node previous;
 
-public class Node {
-
-    private int distanceFromSource = Integer.MAX_VALUE;
-    private boolean visited;
-    private List<Edge> edges = new ArrayList<>();
-
-    public int getDistanceFromSource() {
-        return distanceFromSource;
+    public Node(String name, int index) {
+        this.name = name;
+        this.index = index;
     }
 
-    public void setDistanceFromSource(int distanceFromSource) {
-        this.distanceFromSource = distanceFromSource;
+    public Edge[] getAdjacency() {
+        return adjacency;
     }
 
-    public boolean isVisited() {
-        return visited;
+    public void setAdjacency(Edge[] adjacency) {
+        this.adjacency = adjacency;
     }
 
-    public void setVisited(boolean visited) {
-        this.visited = visited;
+    @Override
+    public int compareTo(Node other) {
+        return Double.compare(minDistance, other.minDistance);
     }
 
-    public List<Edge> getEdges() {
-        return edges;
-    }
-
-    public void setEdges(List<Edge> edges) {
-        this.edges = edges;
+    @Override
+    public String toString() {
+        return "Node[" +
+                "name='" + name + '\'' +
+                ", index=" + index +
+                ']';
     }
 }

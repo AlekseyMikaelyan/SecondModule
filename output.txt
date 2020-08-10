@@ -1,7 +1,2 @@
-Number of nodes = 5
-Number of edges = 16
-The cheapest distance from node 0 to node 0 is 0
-The cheapest distance from node 0 to node 1 is 10
-The cheapest distance from node 0 to node 2 is 10
-The cheapest distance from node 0 to node 3 is 15
-The cheapest distance from node 0 to node 4 is 5
+Min cost from Kotor to Perast: 15.0.
+Min cost from Kotor to Bar: 20.0.
